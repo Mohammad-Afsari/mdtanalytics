@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .navbar {
-    background-color: #08373b;
+    /* background-color: #08373b; */
     height: 60px;
     display: flex;
     justify-content: center;
@@ -11,6 +11,7 @@
     top: 0;
     z-index: 20;
     font-family: 'Roboto', sans-serif;
+    /* border-bottom: 2px solid #011314; */
   }
   
 .nav-container {
@@ -110,7 +111,7 @@ p span {
       width: 100%;
       border-top: 2px solid #041b1d;
       position: absolute;
-      top: 60px;
+      top: 0px;
       left: -110%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -142,5 +143,6 @@ p span {
       font-size: 1.8rem;
       cursor: pointer;
       color: #ffdd40;
+      z-index: 900;
     }
 }
