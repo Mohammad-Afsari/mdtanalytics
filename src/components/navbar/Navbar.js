@@ -40,7 +40,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                About
+                Services
               </NavLink>
             </li>
             <li className="nav-item">
@@ -51,7 +51,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Blog
+                Clients
               </NavLink>
             </li>
             <li className="nav-item">
