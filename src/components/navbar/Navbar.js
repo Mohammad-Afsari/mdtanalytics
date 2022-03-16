@@ -1,26 +1,24 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-
-const test = <FontAwesomeIcon icon="fas fa-times" />
-const test2 = <FontAwesomeIcon icon="fas fa-bars" />
-
+import { GoGraph } from 'react-icons/go'
 
 function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+
   return (
     <>
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            CodeBucks
-            <i className="fas fa-code"></i>
+              <div className="brand">
+                <p className="brandLogo"><GoGraph /> </p>
+                <p className="brandName"><span>MDT</span> Analytics</p>
+              </div>
           </NavLink>
+          
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
