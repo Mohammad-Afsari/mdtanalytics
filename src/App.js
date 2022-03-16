@@ -20,6 +20,11 @@ function App() {
           <Switch>
             <Route exact path="/" >
               <Home />  
+              <div className="introduction">
+                <h1>Relax.</h1>
+                <h4>Let us take the <span>data</span> reins and drive your <span>business</span> forward</h4>
+                <h5>Welcome! We provide all the <span>tools</span>, <span>guidance</span> and <span>support</span> our <span>clients</span> need to succeed in their respective markets. Take a look around and explore the various <span>services</span> we offer, the <span>clients</span> that we’ve partnered with, and <span>samples</span> of our work.</h5>
+              </div>
             </Route>
 
             <Route path="/about">
@@ -33,7 +38,7 @@ function App() {
             <Route path="/contact">
               <Contact />
             </Route>
-            
+
           </Switch>
         </div>
       </Router>

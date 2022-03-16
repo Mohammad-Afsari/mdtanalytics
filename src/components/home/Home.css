@@ -1,0 +1,9 @@
+.home {
+    height: 100vh;
+}
+
+
+.tsparticles {
+    position: fixed;
+    z-index: 2;
+}
