@@ -6,7 +6,7 @@ body {
 
 .navbar {
     background-color: #1f5156;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +74,9 @@ body {
   
 .nav-item .active {
     color: #ffdd40;
-    border: 2px solid #ffdd40;
+    /* border: 2px solid #ffdd40; */
+    border-radius: 10px;
+    cursor: auto;
 }
   
 .nav-icon {
@@ -83,7 +85,6 @@ body {
 
 .brand {
     display: flex;
-    font-family: 'Source Code Pro', monospace;
 }
 
 .brandLogo {
@@ -96,6 +97,11 @@ body {
     cursor: pointer;
 }
 
+.brand:hover {
+    color: #ffdd40;
+}
+
+
 p span {
     font-weight: bolder;
 }
@@ -107,7 +113,7 @@ p span {
       width: 100%;
       border-top: 1pxsolid #fff;
       position: absolute;
-      top: 80px;
+      top: 50px;
       left: -110%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -135,7 +141,7 @@ p span {
       position: absolute;
       top: 0;
       right: 0;
-      transform: translate(-100%, 50%);
+      transform: translate(-100%, 30%);
       font-size: 1.8rem;
       cursor: pointer;
       color: #ffdd40;
