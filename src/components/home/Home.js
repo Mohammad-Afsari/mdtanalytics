@@ -21,7 +21,7 @@ const Home = () => {
                 options={{
                     background: {
                     color: {
-                        value: "#08373b",
+                        value: "#1f2224",
                     },
                     },
                     fpsLimit: 120,
@@ -78,9 +78,9 @@ const Home = () => {
                     number: {
                         density: {
                         enable: true,
-                        area: 2000,
+                        area: 1500,
                         },
-                        value: 30,
+                        value: 60,
                     },
                     opacity: {
                         value: 0.5,
