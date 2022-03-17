@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+:root {
+    --backgroundColorMain: #1f2224; 
+    --backgroundColorTest: #1f2224; 
+}
 
 .navbar {
-    /* background-color: #08373b; */
+    /* background-color: var(--backgroundColorTest); */
     height: 60px;
     display: flex;
     justify-content: center;
@@ -102,6 +108,7 @@
 
 p span {
     font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 960px) {
@@ -118,7 +125,7 @@ p span {
     }
   
     .nav-menu.active {
-      background: #08373b;
+      background: var(--backgroundColorMain);
       left: 0px;
       opacity: 1;
       transition: all 0.5s ease;

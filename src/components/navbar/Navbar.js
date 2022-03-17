@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { GoGraph } from 'react-icons/go'
+import { CgMenuRightAlt } from 'react-icons/cg'
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -35,7 +37,7 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/services"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -46,12 +48,12 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/blog"
+                to="/clients"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Clients
+                Clients 
               </NavLink>
             </li>
             <li className="nav-item">
