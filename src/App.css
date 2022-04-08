@@ -14,7 +14,6 @@ body {
   margin-top: 10%;
 }
 
-
 .introduction {
   z-index: 5;
   background-color: red;
@@ -23,10 +22,12 @@ body {
   justify-content: center;
   margin: 60px auto;
   width: 80vw;
-  color:whitesmoke;
+  color: whitesmoke;
 }
 
-.introduction h1, .introduction h4, .introduction h5 {
+.introduction h1,
+.introduction h4,
+.introduction h5 {
   z-index: 5;
 }
 
@@ -47,7 +48,8 @@ body {
   text-shadow: 1.5px 1.5px 1.5px #666;
 }
 
-.introduction h4 span, .introduction h5 span {
+.introduction h4 span,
+.introduction h5 span {
   color: #ffdd40;
 }
 
@@ -58,21 +60,21 @@ body {
 }
 
 .linkBtn {
-  margin-left: 30px;
   cursor: pointer;
 }
 
 .linkBtn:hover {
-  color: #F8F005;
+  color: #f8f005;
   font-weight: bolder;
   transition: 0.15s;
 }
 
 button::after:hover {
-  color:#15354b;
+  color: #15354b;
 }
 
-button, button::after {
+button,
+button::after {
   width: 180px;
   height: 36px;
   font-size: 22px;
@@ -81,7 +83,7 @@ button, button::after {
   color: #fff;
   letter-spacing: 3px;
   line-height: 38px;
-  box-shadow: 6px 0px 0px #F8F005;
+  box-shadow: 6px 0px 0px #f8f005;
   outline: transparent;
   position: relative;
 }
@@ -93,15 +95,21 @@ button::after {
   --slice-3: inset(10% -6px 85% 0);
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
-  content: 'AVAILABLE NOW';
+  content: "AVAILABLE NOW";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #1c6fa7 3%, #1c6fa7 5%, #15354b 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #1c6fa7;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #1c6fa7 3%,
+    #1c6fa7 5%,
+    #15354b 5%
+  );
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #1c6fa7;
   clip-path: var(--slice-0);
 }
 
@@ -156,4 +164,3 @@ button:hover::after {
     transform: translate(0);
   }
 }
-
