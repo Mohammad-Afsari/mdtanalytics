@@ -4,14 +4,13 @@
 }
 
 body {
-  background-color: #4dad66;
+  background-color: #1f2224;
 }
 
 .pages {
-  color: #316685;
+  /* color: #316685; */
   text-align: center;
   font-size: 3.5rem;
-  margin-top: 10%;
 }
 
 .introduction {
@@ -23,6 +22,7 @@ body {
   margin: 60px auto;
   width: 80vw;
   color: whitesmoke;
+  margin-top: 10%;
 }
 
 .introduction h1,
