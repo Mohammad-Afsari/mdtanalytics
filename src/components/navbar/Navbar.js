@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { GoGraph } from 'react-icons/go'
+import { GoGraph } from "react-icons/go";
 // import { CgMenuRightAlt } from 'react-icons/cg'
-
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -15,12 +14,15 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-              <div className="brand">
-                <p className="brandLogo"><GoGraph /> </p>
-                <p className="brandName"><span>MDT</span> Analytics</p>
-              </div>
+            <div className="brand">
+              <p className="brandLogo">
+                <GoGraph />{" "}
+              </p>
+              <p className="brandName">
+                <span>MDT</span> Analytics
+              </p>
+            </div>
           </NavLink>
-          
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
@@ -53,7 +55,7 @@ function Navbar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Clients 
+                Clients
               </NavLink>
             </li>
             <li className="nav-item">
@@ -69,7 +71,7 @@ function Navbar() {
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times": "fas fa-bars"}></i>
+            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
         </div>
       </nav>

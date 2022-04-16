@@ -8,7 +8,7 @@
 
 .navbar {
   /* background-color: var(--backgroundColorTest); */
-  height: 60px;
+  height: 45px; /* was 60px*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +60,7 @@
 .nav-item {
   line-height: 40px;
   margin-right: 1rem;
+  font-size: 18px;
 }
 
 .nav-item:after {
@@ -98,6 +99,8 @@
 
 .brandName {
   padding-left: 10px;
+  padding-top: 6px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -146,7 +149,7 @@ p span {
     top: 0;
     right: 0;
     transform: translate(-100%, 30%);
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     cursor: pointer;
     color: #ffdd40;
     z-index: 900;

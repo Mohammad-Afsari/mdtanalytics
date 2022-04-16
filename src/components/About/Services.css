@@ -1,28 +1,42 @@
 :root {
-  --servicesFont: red;
+  --servicesFont: yellow;
 }
 
 .servicesContainer {
-  height: 100vh;
-  margin: auto;
   color: whitesmoke;
 }
 
 .servicesIntro {
-  margin: 40px auto;
+  margin: 0px auto;
+  /* height: 100vh; */
+}
+
+.allServices {
+  height: 100vh;
 }
 
 .servicesIntro .title {
   font-size: 44px;
-  margin-bottom: 20px;
+  padding-top: 150px;
+  padding-bottom: 40px;
+  color: var(--servicesFont);
+  font-weight: bolder;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
+  /* margin-bottom: 20px; */
 }
 
 .servicesIntro .subTitle {
   font-size: 32px;
+  color: var(--servicesFont);
+  font-weight: bolder;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
 }
 
 /* Scroll down button */
-
 html {
   scroll-behavior: smooth;
 }
@@ -40,7 +54,7 @@ html {
   margin: 0 auto;
   width: 24px;
   height: 100px;
-  margin-top: 55vh;
+  margin-top: 10vh;
 }
 
 .mouse_scroll:hover {
