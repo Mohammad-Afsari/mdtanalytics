@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./Services.css";
+import background from "../../img/services2.jpg";
 
 const Services = () => {
   const allServices = useRef(null);
@@ -10,20 +11,31 @@ const Services = () => {
 
   return (
     <div className="servicesContainer">
-      <div className="servicesIntro">
+      <div
+        style={{
+          backgroundImage: `url(${background}`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          //   width: "100vw",
+          height: "95vh",
+        }}
+        className="servicesIntro"
+      >
         <section className="title">Consulting Services</section>
-        <section className="subTitle">Gaurenteed sucess</section>
-      </div>
-      <div class="mouse_scroll" onClick={handleClick}>
-        <div class="mouse">
-          <div class="wheel"></div>
+        <section className="subTitle">Gaurenteed success</section>
+        <div className="mouse_scroll" onClick={handleClick}>
+          <div className="mouse">
+            <div className="wheel"></div>
+          </div>
+          <div>
+            <span className="m_scroll_arrows unu"></span>
+            <span className="m_scroll_arrows doi"></span>
+            <span className="m_scroll_arrows trei"></span>
+          </div>
         </div>
-        <div>
-          <span class="m_scroll_arrows unu"></span>
-          <span class="m_scroll_arrows doi"></span>
-          <span class="m_scroll_arrows trei"></span>
-        </div>
       </div>
+
       <div ref={allServices} className="allServices">
         <section>HELLO</section>
       </div>
