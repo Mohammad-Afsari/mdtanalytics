@@ -1,5 +1,7 @@
 :root {
-  --servicesFont: yellow;
+  --servicesFont: #f5b921;
+  --backgroundShadow: #000000;
+  --borderServices: whitesmoke;
 }
 
 .servicesContainer {
@@ -12,7 +14,8 @@
 }
 
 .allServices {
-  height: 100vh;
+  height: 200vh;
+  padding-top: 30px;
 }
 
 .servicesIntro .title {
@@ -21,9 +24,12 @@
   padding-bottom: 40px;
   color: var(--servicesFont);
   font-weight: bolder;
-  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
-    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
-    0.05em 0.05em black;
+  text-shadow: 0.05em 0 var(--backgroundShadow),
+    0 0.05em var(--backgroundShadow), -0.05em 0 var(--backgroundShadow),
+    0 -0.05em var(--backgroundShadow), -0.05em -0.05em var(--backgroundShadow),
+    -0.05em 0.05em var(--backgroundShadow),
+    0.05em -0.05em var(--backgroundShadow),
+    0.05em 0.05em var(--backgroundShadow);
   /* margin-bottom: 20px; */
 }
 
@@ -31,9 +37,24 @@
   font-size: 32px;
   color: var(--servicesFont);
   font-weight: bolder;
-  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
-    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
-    0.05em 0.05em black;
+  text-shadow: 0.05em 0 var(--backgroundShadow),
+    0 0.05em var(--backgroundShadow), -0.05em 0 var(--backgroundShadow),
+    0 -0.05em var(--backgroundShadow), -0.05em -0.05em var(--backgroundShadow),
+    -0.05em 0.05em var(--backgroundShadow),
+    0.05em -0.05em var(--backgroundShadow),
+    0.05em 0.05em var(--backgroundShadow);
+}
+
+/* Services */
+.serviceItem {
+  margin: 120px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  height: 300px;
+  border: 1px solid var(--servicesFont);
+  border-radius: 18px;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
 }
 
 /* Scroll down button */
@@ -69,8 +90,8 @@ html {
   -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
   transform: rotate(45deg);
 
-  border-right: 2px solid yellow;
-  border-bottom: 2px solid yellow;
+  border-right: 2px solid var(--servicesFont);
+  border-bottom: 2px solid var(--servicesFont);
   margin: 0 0 3px 4px;
 
   width: 16px;
@@ -125,7 +146,7 @@ html {
   width: 24px;
   border-radius: 14px;
   transform: none;
-  border: 2px solid yellow;
+  border: 2px solid var(--servicesFont);
   top: 170px;
 }
 
@@ -134,12 +155,12 @@ html {
   width: 2px;
   display: block;
   margin: 5px auto;
-  background: yellow;
+  background: var(--servicesFont);
   position: relative;
 
   height: 4px;
   width: 4px;
-  border: 2px solid yellow;
+  border: 2px solid var(--servicesFont);
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
