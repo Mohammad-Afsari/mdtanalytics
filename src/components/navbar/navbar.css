@@ -3,7 +3,7 @@
 
 :root {
   --backgroundColorMain: #1f2224;
-  --backgroundColorTest: #1f2224;
+  --backgroundColorTest: #2b3033;
 }
 
 .navbar {
@@ -90,6 +90,7 @@
 
 .brand {
   display: flex;
+  /* width: 150px; */
 }
 
 .brandLogo {
