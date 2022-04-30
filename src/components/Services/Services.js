@@ -4,8 +4,15 @@ import background from "../../img/services4.jpg";
 import dataSolutions from "../../img/datasolutions.png";
 import digitalMarketing from "../../img/digitalmarketing.jpg";
 import bi from "../../img/bi2.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
   const allServices = useRef(null);
 
   const handleClick = () => {
@@ -38,7 +45,7 @@ const Services = () => {
         </div>
       </div>
       <div ref={allServices} className="allServices">
-        <div className="serviceItem">
+        <div className="serviceItem" data-aos="fade-up">
           <section
             style={{
               color: "whitesmoke",
@@ -63,7 +70,7 @@ const Services = () => {
             }}
           ></section>
         </div>
-        <div className="serviceItem">
+        <div className="serviceItem" data-aos="fade-up">
           <section
             style={{
               color: "whitesmoke",
@@ -86,7 +93,7 @@ const Services = () => {
             }}
           ></section>
         </div>
-        <div className="serviceItem">
+        <div className="serviceItem" data-aos="fade-up">
           <section
             style={{
               color: "whitesmoke",
