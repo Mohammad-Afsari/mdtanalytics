@@ -20,7 +20,7 @@ const Services = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          height: "95vh",
+          height: "97vh",
         }}
         className="servicesIntro"
       >
@@ -47,9 +47,10 @@ const Services = () => {
               borderBottomLeftRadius: "18px",
             }}
           >
-            DATA SOLUTIONS
+            <p>DATA SOLUTIONS</p>
           </section>
           <section
+            className="serviceImage"
             style={{
               backgroundImage: `url(${dataSolutions}`,
               backgroundRepeat: "no-repeat",
@@ -71,9 +72,10 @@ const Services = () => {
               borderBottomLeftRadius: "18px",
             }}
           >
-            DIGITAL MARKETING
+            <p>DIGITAL MARKETING</p>
           </section>
           <section
+            className="serviceImage"
             style={{
               backgroundImage: `url(${digitalMarketing}`,
               backgroundRepeat: "no-repeat",
@@ -93,9 +95,10 @@ const Services = () => {
               borderBottomLeftRadius: "18px",
             }}
           >
-            BUSINESS INTELLIGENCE
+            <p>BUSINESS INTELLIGENCE</p>
           </section>
           <section
+            className="serviceImage"
             style={{
               backgroundImage: `url(${bi}`,
               backgroundRepeat: "no-repeat",

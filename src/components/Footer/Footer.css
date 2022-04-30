@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid gray;
+  height: 8vh;
+  margin-top: 120px;
+}
+
+.footerInfo {
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+@media (max-width: 796px) {
+  .footerInfo {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerInfo {
+    font-size: 10px;
+  }
+}
