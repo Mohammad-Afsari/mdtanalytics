@@ -16,7 +16,7 @@ function Navbar() {
           <NavLink exact to="/" className="nav-logo">
             <div className="brand">
               <p className="brandLogo">
-                <GoGraph />{" "}
+                <GoGraph />
               </p>
               <p className="brandName">
                 <span>MDT</span> Analytics
