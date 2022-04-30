@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import Services from "./components/About/Services";
+import Services from "./components/Services/Services";
 import Clients from "./components/Clients/Clients";
 import Contact from "./components/Contact/Contact";
 import Introduction from "./components/Home/Introduction/Introduction";
