@@ -1,0 +1,19 @@
+.clientsContainer {
+  /* width: 90vw; */
+  height: 150vh;
+  /* margin-top: 100px; */
+}
+
+.clientsContainerChild {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin: 0 auto;
+  width: 90vw;
+  padding-top: 100px;
+}
+
+.clientItem {
+  border: 1px solid white;
+  height: 400px;
+}

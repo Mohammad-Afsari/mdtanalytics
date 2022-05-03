@@ -7,7 +7,7 @@ import Clients from "./components/Clients/Clients";
 import Contact from "./components/Contact/Contact";
 import Introduction from "./components/Home/Introduction/Introduction";
 import Footer from "./components/Footer/Footer";
-
+import bianDang from "./img/biandang.png";
 function App() {
   return (
     <>
@@ -28,6 +28,7 @@ function App() {
 
             <Route path="/clients">
               <Clients />
+              <Footer />
             </Route>
 
             <Route path="/contact">
