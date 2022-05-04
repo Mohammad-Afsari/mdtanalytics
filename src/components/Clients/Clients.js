@@ -3,7 +3,11 @@ import bianDang from "../../img/biandang.png";
 import pollen from "../../img/pollen.png";
 import sentinel from "../../img/sentinel.png";
 import badgebespoke from "../../img/badgebespoke.jpg";
-import ourClients from "../../img/ourclients.jpg";
+// import ourClients from "../../img/ourclients.jpg";
+// import ourClients from "../../img/welovecustomers.jpg";
+// import ourClients from "../../img/scales2.jpg";
+// import ourClients from "../../img/trojan.jpg";
+import ourClients from "../../img/ourclientsbr3.jpg";
 
 const Clients = () => {
   return (
@@ -16,50 +20,14 @@ const Clients = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="clientsContainerChild">
-        <section
-          className="clientItem "
-          style={{
-            backgroundImage: `url(${bianDang}`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
-        >
-          1
-        </section>
-        <section
-          className="clientItem "
-          style={{
-            backgroundImage: `url(${pollen}`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
-        >
-          2
-        </section>
-        <section
-          className="clientItem "
-          style={{
-            backgroundImage: `url(${sentinel}`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
-        >
-          3
-        </section>
-        <section
-          className="clientItem "
-          style={{
-            backgroundImage: `url(${badgebespoke}`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
-        >
-          4
+      <div className="clientIntro">
+        <section className="clientIntroItem">
+          <h1>GREAT CLIENT CARE</h1>
+          <p>
+            Our attention is focused on taking care of your data and providing
+            hassle free solutions.
+          </p>
+          <button>VIEW MORE</button>
         </section>
       </div>
     </div>
