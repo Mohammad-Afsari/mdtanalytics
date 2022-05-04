@@ -1,3 +1,7 @@
+/* =================================================================
+ Component 1
+===================================================================*/
+
 .clientsContainer {
   height: 95vh;
 }
@@ -33,9 +37,39 @@
 
 .clientIntroItem button:hover {
   cursor: pointer;
+  color: whitesmoke;
+  transition: 0.3s;
 }
 
-/* .clientItem {
-  border: 1px solid white;
-  height: 400px;
-} */
+/* =================================================================
+ Component 2
+===================================================================*/
+.whyUsContainer {
+  padding-top: 40px;
+  color: whitesmoke;
+}
+
+.whyUs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px auto;
+  padding-top: 30px;
+  width: 80vw;
+}
+
+.whyUsIntro h1 {
+  font-size: 38px;
+}
+
+.whyUsIntro p {
+  font-size: 28px;
+}
+
+.whyUsItem {
+  display: flex;
+  justify-content: center;
+}
+
+.whyUsImg {
+  font-size: 30px;
+}
