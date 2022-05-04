@@ -1,19 +1,41 @@
 .clientsContainer {
-  /* width: 90vw; */
-  height: 150vh;
-  /* margin-top: 100px; */
+  height: 95vh;
 }
 
-.clientsContainerChild {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  margin: 0 auto;
-  width: 90vw;
+.clientIntro {
   padding-top: 100px;
+  width: 85vw;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.clientItem {
+.clientIntroItem h1 {
+  font-size: 48px;
+  padding-bottom: 20px;
+  color: #f5b921;
+  font-weight: bolder;
+}
+
+.clientIntroItem p {
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.clientIntroItem button {
+  height: 40px;
+  width: 100px;
+  border-radius: 2px;
+  background-color: #2b3033;
+  color: whitesmoke;
+  font-weight: bold;
+  color: #f5b921;
+}
+
+.clientIntroItem button:hover {
+  cursor: pointer;
+}
+
+/* .clientItem {
   border: 1px solid white;
   height: 400px;
-}
+} */

@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./Services.css";
-import background from "../../img/services4.jpg";
+// import background from "../../img/services4.jpg";
+import background from "../../img/services6.jpg";
 import dataSolutions from "../../img/datasolutions.png";
 import digitalMarketing from "../../img/digitalmarketing.jpg";
 import bi from "../../img/bi2.jpg";
