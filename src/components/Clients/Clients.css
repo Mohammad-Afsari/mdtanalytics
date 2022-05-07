@@ -1,9 +1,10 @@
 /* =================================================================
- Component 1
+ Component 1 (Clients)
 ===================================================================*/
 
 .clientsContainer {
   height: 95vh;
+  /* width: 99vw; */
 }
 
 .clientIntro {
@@ -42,7 +43,7 @@
 }
 
 /* =================================================================
- Component 2
+ Component 2 (Clients 2)
 ===================================================================*/
 .whyUsContainer {
   padding-top: 40px;
@@ -54,7 +55,13 @@
   grid-template-columns: 1fr 1fr;
   margin: 0px auto;
   padding-top: 30px;
+  gap: 40px;
   width: 80vw;
+}
+
+.whyUsIntro {
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .whyUsIntro h1 {
@@ -62,7 +69,8 @@
 }
 
 .whyUsIntro p {
-  font-size: 28px;
+  font-size: 24px;
+  padding-top: 10px;
 }
 
 .whyUsItem {
@@ -70,6 +78,92 @@
   justify-content: center;
 }
 
+.whyUsItem div h6 {
+  align-items: center;
+  padding-bottom: 20px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.whyUsItem div section {
+  font-size: 16px;
+  width: 30vw;
+  text-align: left;
+  padding-left: 30px;
+}
+
 .whyUsImg {
-  font-size: 30px;
+  font-size: 40px;
+  padding-top: 7px;
+  color: #f5b921;
+}
+
+.bulb {
+  font-size: 45px;
+}
+
+/* Dynamics */
+
+@media (max-width: 768px) {
+  /* Clients2 */
+  .whyUs {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px auto;
+    padding-top: 30px;
+    gap: 40px;
+    width: 90vw;
+  }
+
+  .whyUsIntro h1 {
+    font-size: 36px;
+  }
+
+  .whyUsIntro p {
+    font-size: 18px;
+  }
+
+  .whyUsItem {
+    width: 90vw;
+  }
+
+  .whyUsItem div {
+    padding-top: 7px;
+  }
+
+  .whyUsItem div section {
+    font-size: 16px;
+    width: 80vw;
+  }
+
+  .whyUsItem div h6 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .whyUsItem div section {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .whyUsImg {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Clients1 */
+  .clientIntro {
+    padding-top: 60px;
+  }
+
+  .clientIntroItem h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .clientIntroItem p {
+    font-size: 20px;
+  }
 }
