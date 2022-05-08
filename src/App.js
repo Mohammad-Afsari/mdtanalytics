@@ -9,6 +9,7 @@ import Introduction from "./components/Home/Introduction/Introduction";
 import Footer from "./components/Footer/Footer";
 import bianDang from "./img/biandang.png";
 import Clients2 from "./components/Clients/Clients2";
+import Clients3 from "./components/Clients/Clients3";
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
             <Route path="/clients">
               <Clients />
               <Clients2 />
+              <Clients3 />
               <Footer />
             </Route>
 

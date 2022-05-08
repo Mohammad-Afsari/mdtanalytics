@@ -46,7 +46,7 @@
  Component 2 (Clients 2)
 ===================================================================*/
 .whyUsContainer {
-  padding-top: 40px;
+  padding-top: 100px;
   color: whitesmoke;
 }
 
@@ -54,7 +54,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0px auto;
-  padding-top: 30px;
+  padding-top: 80px;
   gap: 40px;
   width: 80vw;
 }
@@ -65,7 +65,7 @@
 }
 
 .whyUsIntro h1 {
-  font-size: 38px;
+  font-size: 48px;
 }
 
 .whyUsIntro p {
@@ -166,4 +166,59 @@
   .clientIntroItem p {
     font-size: 20px;
   }
+}
+
+/* =================================================================
+ Component 3 (Clients 3)
+===================================================================*/
+
+.clientsSliderContainer {
+  margin-top: 150px;
+}
+
+.clientsSliderContainer h1 {
+  font-size: 48px;
+  color: whitesmoke;
+}
+
+.swiper {
+  margin-top: 100px;
+  width: 80vw;
+  height: 400px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  right: 10px;
+  padding: 30px;
+  color: #f5b921 !important;
+  fill: #f5b921 !important;
+  stroke: #f5b921 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f5b921 !important;
+}
+
+.slideClientItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  gap: 50px;
+  height: 80%;
+  align-items: top;
+  /* margin-top: 100px; */
+}
+
+.clientDetails {
+  text-align: left;
+}
+
+.clientDetails h6 {
+  font-size: 38px;
+}
+
+.clientDetails p {
+  font-size: 22px;
 }

@@ -19,8 +19,9 @@ const Clients2 = () => {
           <div>
             <h6>Smart Solutions</h6>
             <section>
-              Bring us your most challanging, wildest and most problematic ideas
-              and with our creative mindset we'll make it happen.
+              Bring us your most challanging, wildest and most problematic
+              issues and with our creative mindset we'll produce a working
+              solution.
             </section>
           </div>
         </div>
@@ -32,7 +33,7 @@ const Clients2 = () => {
             <h6>Support</h6>
             <section>
               We'll provide the tools and support that will help you increase
-              your revenues.
+              your revenues and add value to your business.
             </section>
           </div>
         </div>
@@ -57,7 +58,8 @@ const Clients2 = () => {
             <h6>Pride</h6>
             <section>
               We take pride in the work that we do and are extremely
-              result-orientated and passionate about each one of our projects.
+              result-orientated and passionate about each and every one of our
+              projects.
             </section>
           </div>
         </div>
