@@ -12,6 +12,10 @@
   color: whitesmoke;
 }
 
+.footerInfo span {
+  color: #f5b921;
+}
+
 @media (max-width: 796px) {
   .footerInfo {
     font-size: 12px;

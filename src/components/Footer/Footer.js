@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <p className="footerInfo">
-        Copyright © {yearNow} MDT Analytics All rights reserved.
+        Copyright © {yearNow} <span>MDT Analytics</span> All rights reserved.
       </p>
     </div>
   );
