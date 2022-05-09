@@ -171,6 +171,16 @@
 /* =================================================================
  Component 3 (Clients 3)
 ===================================================================*/
+.swiper-button-next,
+.swiper-button-prev {
+  right: 10px;
+  padding: 30px;
+  height: 10px !important;
+  width: 10px !important;
+  color: #f5b921 !important;
+  fill: #f5b921 !important;
+  stroke: #f5b921 !important;
+}
 
 .clientsSliderContainer {
   margin-top: 150px;
@@ -182,18 +192,9 @@
 }
 
 .swiper {
-  margin-top: 100px;
-  width: 80vw;
+  margin-top: 50px;
+  width: 90vw;
   height: 400px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  right: 10px;
-  padding: 30px;
-  color: #f5b921 !important;
-  fill: #f5b921 !important;
-  stroke: #f5b921 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -205,20 +206,150 @@
   grid-template-columns: 1fr 1fr;
   width: 80%;
   margin: 0 auto;
-  gap: 50px;
+  /* gap: 50px; */
   height: 80%;
-  align-items: top;
+  align-items: center;
   /* margin-top: 100px; */
+  color: whitesmoke;
+}
+.clientLogo {
+  margin: 0 auto;
 }
 
 .clientDetails {
   text-align: left;
+  /* margin-bottom: 80px; */
 }
 
 .clientDetails h6 {
   font-size: 38px;
 }
 
-.clientDetails p {
+.clientDetails p:first-of-type {
   font-size: 22px;
+}
+
+.clientDetails p:nth-of-type(2) {
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.clientDetails ul {
+  font-size: 18px;
+  /* margin-top: 15px; */
+}
+
+.clientDetails li {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .clientsSliderContainer h1 {
+    font-size: 36px;
+    color: whitesmoke;
+  }
+
+  .slideClientItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    /* gap: 50px; */
+    height: 80%;
+    align-items: center;
+    /* margin-top: 100px; */
+    color: whitesmoke;
+  }
+
+  .clientDetails h6 {
+    font-size: 28px;
+  }
+
+  .clientDetails h6 {
+    font-size: 28px;
+  }
+
+  .clientDetails p:first-of-type {
+    font-size: 18px;
+  }
+
+  .clientDetails p:nth-of-type(2) {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .clientDetails ul {
+    font-size: 15px;
+    /* margin-top: 15px; */
+  }
+
+  .slideClientItem section:first-of-type {
+    height: 180px !important;
+    width: 180px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .clientsSliderContainer h1 {
+    font-size: 36px;
+    color: whitesmoke;
+  }
+
+  .swiper {
+    width: 100vw;
+    height: 600px;
+  }
+
+  .slideClientItem {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+    height: 80%;
+    align-items: center;
+  }
+
+  .clientDetails {
+    text-align: center;
+    list-style-position: inside;
+  }
+
+  .clientDetails h6 {
+    font-size: 24px;
+  }
+
+  .clientDetails h6 {
+    font-size: 24px;
+    text-align: left;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .clientDetails p:first-of-type {
+    font-size: 18px;
+    text-align: left;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .clientDetails p:nth-of-type(2) {
+    font-size: 18px;
+    /* margin-top: 10px; */
+    width: 200px;
+    margin: 10px auto;
+    text-align: left;
+  }
+
+  .clientDetails ul {
+    font-size: 15px;
+    width: 220px;
+    margin: 0 auto;
+    text-align: left;
+    /* margin-top: 15px; */
+  }
+
+  .slideClientItem section:first-of-type {
+    height: 200px !important;
+    width: 200px !important;
+  }
 }
