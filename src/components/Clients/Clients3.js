@@ -11,12 +11,10 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 // Clients
-import biandang from "../../img/biandang.png";
-import pollen from "../../img/pollen.png";
-// import sentinel from "../../img/sentinel.png";
-import sentinel from "../../img/sentinel2.JPG";
-import badgebespoke from "../../img/badgebespoke2.jpg";
-import ourClients from "../../img/ourclientsbr3.jpg";
+import biandang from "../../img/biandangofficial.JPG";
+import pollen from "../../img/pollenofficial.JPG";
+import sentinel from "../../img/sentinelofficial.JPG";
+import badgebespoke from "../../img/badgebespokeofficial.JPG";
 
 const Clients3 = () => {
   return (
@@ -26,10 +24,11 @@ const Clients3 = () => {
         cssMode={true}
         navigation={true}
         pagination={true}
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
         mousewheel={true}
         keyboard={true}
         modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
@@ -38,19 +37,25 @@ const Clients3 = () => {
         <SwiperSlide>
           <div className="slideClientItem">
             <section
+              className="clientLogo"
               style={{
                 backgroundImage: `url(${biandang})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 borderRadius: "10px",
-                height: "90%",
-                width: "100%",
+                height: "250px",
+                width: "250px",
               }}
             ></section>
             <section className="clientDetails">
-              <h6>Client Name</h6>
-              <p>Description</p>
+              <h6>Bian Dang</h6>
+              <p>Dark Kitchen</p>
+              <p>Services provided:</p>
+              <ul>
+                <li>PPC</li>
+                <li>Social</li>
+              </ul>
             </section>
           </div>
         </SwiperSlide>
@@ -58,19 +63,27 @@ const Clients3 = () => {
           {" "}
           <div className="slideClientItem">
             <section
+              className="clientLogo"
               style={{
-                backgroundImage: `url(https://static.wixstatic.com/media/8c007a_fe7474ae38144ca8bbcca38b0f5f1144~mv2.png/v1/fill/w_301,h_167,al_c,q_85,enc_auto/download.png)`,
+                backgroundImage: `url(${pollen})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 borderRadius: "10px",
-                height: "50%",
-                width: "100%",
+                height: "250px",
+                width: "250px",
               }}
             ></section>
             <section className="clientDetails">
-              <h6>Client Name</h6>
-              <p>Description</p>
+              <h6>Pollen</h6>
+              <p>Events</p>
+              <p>Services provided:</p>
+              <ul>
+                <li>Looker Business Intelligence</li>
+                <li>Retool Application Builds</li>
+                <li>Data Consulting</li>
+                <li>DBT Analytics Engineering</li>
+              </ul>
             </section>
           </div>
         </SwiperSlide>
@@ -78,19 +91,25 @@ const Clients3 = () => {
           {" "}
           <div className="slideClientItem">
             <section
+              className="clientLogo"
               style={{
                 backgroundImage: `url(${sentinel})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 borderRadius: "10px",
-                height: "50%",
-                width: "100%",
+                height: "250px",
+                width: "250px",
               }}
             ></section>
             <section className="clientDetails">
-              <h6>Client Name</h6>
-              <p>Description</p>
+              <h6>Sentinel</h6>
+              <p>Recruitment Consultants</p>
+              <p>Project / client matching partner</p>
+              {/* <ul>
+                <li>PPC</li>
+                <li>Social</li>
+              </ul> */}
             </section>
           </div>
         </SwiperSlide>
@@ -98,19 +117,27 @@ const Clients3 = () => {
           {" "}
           <div className="slideClientItem">
             <section
+              className="clientLogo"
               style={{
                 backgroundImage: `url(${badgebespoke})`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 borderRadius: "10px",
-                height: "50%",
-                width: "50%",
+                height: "250px",
+                width: "250px",
               }}
             ></section>
             <section className="clientDetails">
-              <h6>Client Name</h6>
-              <p>Description</p>
+              <h6>Badge Bespoke</h6>
+              <p>Bespoke Jewellery</p>
+              <p>Services provided:</p>
+              <ul>
+                <li>PPC</li>
+                <li>Paid Social</li>
+                <li>Google Analytics</li>
+                <li>Google Tag Manager</li>
+              </ul>
             </section>
           </div>
         </SwiperSlide>
