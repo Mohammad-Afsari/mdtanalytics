@@ -10,7 +10,11 @@ import Footer from "./components/Footer/Footer";
 import bianDang from "./img/biandang.png";
 import Clients2 from "./components/Clients/Clients2";
 import Clients3 from "./components/Clients/Clients3";
+import { useRef } from "react";
+
 function App() {
+  const clientCare = useRef(null);
+
   return (
     <>
       <Router>
@@ -29,8 +33,8 @@ function App() {
             </Route>
 
             <Route path="/clients">
-              <Clients />
-              <Clients2 />
+              <Clients clientCare={clientCare} />
+              <Clients2 ref={clientCare} />
               <Clients3 />
               <Footer />
             </Route>

@@ -3,10 +3,11 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { RiTeamFill } from "react-icons/ri";
 import { FaStar } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa";
+import { forwardRef } from "react";
 
-const Clients2 = () => {
+const Clients2 = forwardRef((props, ref) => {
   return (
-    <div className="whyUsContainer">
+    <div className="whyUsContainer" ref={ref}>
       <div className="whyUsIntro">
         <h1>Why Us?</h1>
         <p>Your business problems, our state-of-the-art solutions.</p>
@@ -66,6 +67,6 @@ const Clients2 = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Clients2;
