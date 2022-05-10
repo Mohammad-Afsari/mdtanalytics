@@ -1,7 +1,5 @@
 import "./Clients.css";
 import ourClients from "../../img/ourclientsbr3.jpg";
-import Clients3 from "./Clients3";
-import { useRef } from "react";
 
 const Clients = ({ clientCare }) => {
   const handleClick = () => {

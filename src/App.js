@@ -7,7 +7,6 @@ import Clients from "./components/Clients/Clients";
 import Contact from "./components/Contact/Contact";
 import Introduction from "./components/Home/Introduction/Introduction";
 import Footer from "./components/Footer/Footer";
-import bianDang from "./img/biandang.png";
 import Clients2 from "./components/Clients/Clients2";
 import Clients3 from "./components/Clients/Clients3";
 import { useRef } from "react";
@@ -41,6 +40,7 @@ function App() {
 
             <Route path="/contact">
               <Contact />
+              <Footer />
             </Route>
           </Switch>
         </div>
