@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <div
       className="contactsContainer"
-      //   style={{
-      //     backgroundImage: `url(${contacts}`,
-      //     backgroundRepeat: "no-repeat",
-      //     backgroundPosition: "center",
-      //     backgroundSize: "cover",
-      //   }}
+      style={{
+        backgroundImage: `url(${contacts}`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
     >
       <h1>LET US HELP YOU</h1>
       <p>
