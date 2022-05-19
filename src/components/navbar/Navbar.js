@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { GoGraph } from "react-icons/go";
-// import { CgMenuRightAlt } from 'react-icons/cg'
 
 function Navbar() {
   const [click, setClick] = useState(false);
