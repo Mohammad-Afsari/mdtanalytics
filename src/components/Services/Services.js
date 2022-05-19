@@ -33,7 +33,7 @@ const Services = () => {
         className="servicesIntro"
       >
         <section className="title">Consulting Services</section>
-        <section className="subTitle">Gaurenteed success</section>
+        <section className="subTitle">Gauranteed success</section>
         <div className="mouse_scroll" onClick={handleClick}>
           <div className="mouse">
             <div className="wheel"></div>

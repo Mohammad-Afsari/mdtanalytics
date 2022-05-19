@@ -1,6 +1,8 @@
 import "./Contact.css";
 import contacts from "../../img/contacts.jpg";
 import { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [firstName, setFirstName] = useState(null);
@@ -9,7 +11,27 @@ const Contact = () => {
   const [phone, setPhone] = useState(null);
   const [website, setWebsite] = useState(null);
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.children[0].value);
+    const userEnquiry = { firstName, lastName, email, phone, website };
+
+    // emailjs
+    //   .sendForm(
+    //     "YOUR_SERVICE_ID",
+    //     "YOUR_TEMPLATE_ID",
+    //     form.current,
+    //     "YOUR_PUBLIC_KEY"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
+  };
 
   return (
     <div
@@ -31,38 +53,45 @@ const Contact = () => {
       <form className="container contactForm" onSubmit={handleSubmit}>
         <input
           onChange={(e) => setFirstName(e.target.value)}
+          name="firstName"
           type="text"
           placeholder="First Name"
           required
         ></input>
         <input
           onChange={(e) => setLastName(e.target.value)}
+          name="lastName"
           type="text"
           placeholder="Last Name"
           required
         ></input>
         <input
           onChange={(e) => setEmail(e.target.value)}
+          name="email"
           type="email"
           placeholder="Email"
           required
         ></input>
         <input
           onChange={(e) => setPhone(e.target.value)}
+          name="contactNumber"
           type="number"
-          placeholder="Phone"
+          placeholder="Contact Number"
           required
         ></input>
         <input
           onChange={(e) => setWebsite(e.target.value)}
+          name="websiteLink"
           type="text"
           placeholder="Link to your website"
         ></input>
-        <button type="submit" className="submitBtn">
-          Submit Enquiry
-        </button>
+        <div className="submitContainer">
+          <button type="submit" className="submitBtn">
+            Submit Enquiry
+          </button>
+        </div>
       </form>
-      <div className="userMessage">Message sent.</div>
+      <div className="userMessage">Submitted</div>
     </div>
   );
 };
