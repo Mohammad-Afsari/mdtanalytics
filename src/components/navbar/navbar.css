@@ -98,6 +98,12 @@
   cursor: pointer;
 }
 
+.brandLogoLink,
+.brandNameLink {
+  color: #f5b921;
+  text-decoration: none;
+}
+
 .brandName {
   padding-left: 10px;
   padding-top: 6px;

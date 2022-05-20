@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { GoGraph } from "react-icons/go";
 
@@ -12,16 +13,20 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
+          <div className="nav-logo">
             <div className="brand">
               <p className="brandLogo">
-                <GoGraph />
+                <Link to="/" className="brandLogoLink">
+                  <GoGraph />
+                </Link>
               </p>
               <p className="brandName">
-                <span>MDT</span> Analytics
+                <Link to="/" className="brandNameLink">
+                  <span>MDT</span> Analytics
+                </Link>
               </p>
             </div>
-          </NavLink>
+          </div>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
