@@ -7,7 +7,10 @@ import { GoGraph } from "react-icons/go";
 function Navbar() {
   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    setClick(!click);
+    window.scrollTo({ top: 0, behavior: "auto" });
+  };
 
   return (
     <>
@@ -36,6 +39,7 @@ function Navbar() {
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
+                id="homeLink"
               >
                 Home
               </NavLink>
