@@ -3,6 +3,7 @@ import contacts from "../../img/contacts.jpg";
 import { useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useHistory } from "react-router-dom";
 
 const Contact = () => {
   const [firstName, setFirstName] = useState(null);
@@ -11,6 +12,8 @@ const Contact = () => {
   const [phone, setPhone] = useState(null);
   const [website, setWebsite] = useState(null);
   const [isPending, setIsPending] = useState(true);
+  const form = useRef();
+  const history = useHistory();
 
   const spinner = (() => {
     setTimeout(() => {
@@ -20,24 +23,40 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.children[0].value);
-    const userEnquiry = { firstName, lastName, email, phone, website };
 
-    // emailjs
-    //   .sendForm(
-    //     "YOUR_SERVICE_ID",
-    //     "YOUR_TEMPLATE_ID",
-    //     form.current,
-    //     "YOUR_PUBLIC_KEY"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_d0yqxhd",
+        "template_ehqpyrm",
+        form.current,
+        "4aRuYTHzYZnU8-Fjs"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setTimeout(() => {
+            history.push("/");
+          }, 1500);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    // Get the snackbar DIV
+    const messageElement = document.getElementById("userMessage");
+
+    // Add the "show" class to DIV
+    messageElement.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function () {
+      messageElement.className = messageElement.className.replace("show", "");
+    }, 3000);
+
+    e.target.reset();
+
+    // Redirect back to home page
   };
 
   return (
@@ -68,7 +87,11 @@ const Contact = () => {
             Get in touch today to see how we might be able to help your business
             achieve new heights.
           </p>
-          <form className="container contactForm" onSubmit={handleSubmit}>
+          <form
+            ref={form}
+            className="container contactForm"
+            onSubmit={handleSubmit}
+          >
             <input
               onChange={(e) => setFirstName(e.target.value)}
               name="firstName"
@@ -109,7 +132,7 @@ const Contact = () => {
               </button>
             </div>
           </form>
-          <div className="userMessage">Submitted</div>
+          <div id="userMessage">Submitted</div>
         </div>
       )}
     </>
