@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+:root {
+  --backgroundColorMain: #1f2224;
+  --backgroundColorTest: #2b3033;
+}
+
+.navbar {
+  height: 45px; /* was 60px*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid #181a1b;
+  background-color: #1f2224;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  max-width: 1500px;
+}
+
+.nav-logo {
+  color: #f5b921;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  width: 100px;
+  cursor: auto;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+  font-size: 18px;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #ffdd40;
+}
+
+.nav-item .active {
+  color: #ffdd40;
+  /* border: 2px solid #ffdd40; */
+  border-radius: 10px;
+  cursor: auto;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.brand {
+  display: flex;
+  /* width: 150px; */
+}
+
+.brandLogo {
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.brandLogoLink,
+.brandNameLink {
+  color: #f5b921;
+  text-decoration: none;
+}
+
+.brandName {
+  padding-left: 10px;
+  padding-top: 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* .brand:hover {
+    color: #ffdd40;
+} */
+
+p span {
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 2px solid #041b1d;
+    position: absolute;
+    top: 0px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: var(--backgroundColorMain);
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #ffdd40;
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 30%);
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #ffdd40;
+    z-index: 900;
+  }
+}
