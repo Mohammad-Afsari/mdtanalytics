@@ -25,7 +25,7 @@ const Services = () => {
   const allServices = useRef(null);
 
   const handleClick = () => {
-    allServices.current.scrollIntoView();
+    allServices.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -53,7 +53,7 @@ const Services = () => {
             className="servicesIntro"
           >
             <section className="title">Consulting Services</section>
-            <section className="subTitle">Gauranteed success</section>
+            <section className="subTitle">Guaranteed success</section>
             <div className="mouse_scroll" onClick={handleClick}>
               <div className="mouse">
                 <div className="wheel"></div>
