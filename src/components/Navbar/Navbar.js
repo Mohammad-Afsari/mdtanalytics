@@ -12,6 +12,10 @@ function Navbar() {
     window.scrollTo({ top: 0, behavior: "auto" });
   };
 
+  const handleClickMenu = () => {
+    setClick(!click);
+  };
+
   return (
     <>
       <nav className="navbar">
@@ -77,7 +81,7 @@ function Navbar() {
               </NavLink>
             </li>
           </ul>
-          <div className="nav-icon" onClick={handleClick}>
+          <div className="nav-icon" onClick={handleClickMenu}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
         </div>
